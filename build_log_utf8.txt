@@ -1,0 +1,1411 @@
+﻿
+> next-app@0.1.0 build
+> next build
+
+▲ Next.js 16.1.6 (Turbopack)
+
+  Creating an optimized production build ...
+node.exe : 
+At C:\nvm4w\nodejs\npm.ps1:29 char:3
++   & $NODE_EXE $NPM_CLI_JS $args
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+> Build error occurred
+Error: Turbopack build failed with 32 errors:
+./app/admin/adoption-requests/page.tsx:3:1
+Export default doesn't exist in target module
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
+ [90m 2 |[39m
+[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mAdminTable[39m[33m,[39m { 
+[33mAdminTableRow[39m[33m,[39m [33mAdminTableCell[39m } [36mfrom[39m 
+[32m"@/components/AdminTable"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[
+39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m
+^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 4 |[39m [36mimport[39m [33mBadge[39m [36mfrom[39m 
+[32m"@/components/Badge"[39m[33m;[39m
+ [90m 5 |[39m [36mimport[39m [33mPagination[39m [36mfrom[39m 
+[32m"@/components/Pagination"[39m[33m;[39m
+ [90m 6 |[39m[0m
+
+The export default was not found in module [project]/components/AdminTable.tsx 
+[app-client] (ecmascript).
+Did you mean to import AdminTable?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's 
+known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/adoption-requests/page.tsx [Client Component Browser]
+    ./app/admin/adoption-requests/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/adoption-requests/page.tsx [Client Component SSR]
+    ./app/admin/adoption-requests/page.tsx [Server Component]
+
+
+./app/admin/adoption-requests/page.tsx:3:1
+Export default doesn't exist in target module
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
+ [90m 2 |[39m
+[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mAdminTable[39m[33m,[39m { 
+[33mAdminTableRow[39m[33m,[39m [33mAdminTableCell[39m } [36mfrom[39m 
+[32m"@/components/AdminTable"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[
+39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m
+^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 4 |[39m [36mimport[39m [33mBadge[39m [36mfrom[39m 
+[32m"@/components/Badge"[39m[33m;[39m
+ [90m 5 |[39m [36mimport[39m [33mPagination[39m [36mfrom[39m 
+[32m"@/components/Pagination"[39m[33m;[39m
+ [90m 6 |[39m[0m
+
+The export default was not found in module [project]/components/AdminTable.tsx [app-ssr] 
+(ecmascript).
+Did you mean to import AdminTable?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's 
+known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/adoption-requests/page.tsx [Client Component Browser]
+    ./app/admin/adoption-requests/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/adoption-requests/page.tsx [Client Component SSR]
+    ./app/admin/adoption-requests/page.tsx [Server Component]
+
+
+./app/admin/adoption-requests/page.tsx:4:1
+Export default doesn't exist in target module
+[0m [90m 2 |[39m
+ [90m 3 |[39m [36mimport[39m [33mAdminTable[39m[33m,[39m { 
+[33mAdminTableRow[39m[33m,[39m [33mAdminTableCell[39m } [36mfrom[39m 
+[32m"@/components/AdminTable"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m [33mBadge[39m [36mfrom[39m 
+[32m"@/components/Badge"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[
+39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 5 |[39m [36mimport[39m [33mPagination[39m [36mfrom[39m 
+[32m"@/components/Pagination"[39m[33m;[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m 
+[33mAdoptionRequestsPage[39m() {[0m
+
+The export default was not found in module [project]/components/Badge.tsx [app-client] 
+(ecmascript).
+Did you mean to import Badge?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's 
+known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/adoption-requests/page.tsx [Client Component Browser]
+    ./app/admin/adoption-requests/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/adoption-requests/page.tsx [Client Component SSR]
+    ./app/admin/adoption-requests/page.tsx [Server Component]
+
+
+./app/admin/adoption-requests/page.tsx:4:1
+Export default doesn't exist in target module
+[0m [90m 2 |[39m
+ [90m 3 |[39m [36mimport[39m [33mAdminTable[39m[33m,[39m { 
+[33mAdminTableRow[39m[33m,[39m [33mAdminTableCell[39m } [36mfrom[39m 
+[32m"@/components/AdminTable"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m [33mBadge[39m [36mfrom[39m 
+[32m"@/components/Badge"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[
+39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 5 |[39m [36mimport[39m [33mPagination[39m [36mfrom[39m 
+[32m"@/components/Pagination"[39m[33m;[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m 
+[33mAdoptionRequestsPage[39m() {[0m
+
+The export default was not found in module [project]/components/Badge.tsx [app-ssr] 
+(ecmascript).
+Did you mean to import Badge?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's 
+known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/adoption-requests/page.tsx [Client Component Browser]
+    ./app/admin/adoption-requests/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/adoption-requests/page.tsx [Client Component SSR]
+    ./app/admin/adoption-requests/page.tsx [Server Component]
+
+
+./app/admin/adoption-requests/page.tsx:5:1
+Export default doesn't exist in target module
+[0m [90m 3 |[39m [36mimport[39m [33mAdminTable[39m[33m,[39m { 
+[33mAdminTableRow[39m[33m,[39m [33mAdminTableCell[39m } [36mfrom[39m 
+[32m"@/components/AdminTable"[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m [33mBadge[39m [36mfrom[39m 
+[32m"@/components/Badge"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mPagination[39m [36mfrom[39m 
+[32m"@/components/Pagination"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[
+39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m 
+[33mAdoptionRequestsPage[39m() {
+ [90m 8 |[39m   [36mreturn[39m ([0m
+
+The export default was not found in module [project]/components/Pagination.tsx 
+[app-client] (ecmascript).
+Did you mean to import Pagination?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's 
+known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/adoption-requests/page.tsx [Client Component Browser]
+    ./app/admin/adoption-requests/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/adoption-requests/page.tsx [Client Component SSR]
+    ./app/admin/adoption-requests/page.tsx [Server Component]
+
+
+./app/admin/adoption-requests/page.tsx:5:1
+Export default doesn't exist in target module
+[0m [90m 3 |[39m [36mimport[39m [33mAdminTable[39m[33m,[39m { 
+[33mAdminTableRow[39m[33m,[39m [33mAdminTableCell[39m } [36mfrom[39m 
+[32m"@/components/AdminTable"[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m [33mBadge[39m [36mfrom[39m 
+[32m"@/components/Badge"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mPagination[39m [36mfrom[39m 
+[32m"@/components/Pagination"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[
+39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m 
+[33mAdoptionRequestsPage[39m() {
+ [90m 8 |[39m   [36mreturn[39m ([0m
+
+The export default was not found in module [project]/components/Pagination.tsx [app-ssr] 
+(ecmascript).
+Did you mean to import Pagination?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's 
+known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/adoption-requests/page.tsx [Client Component Browser]
+    ./app/admin/adoption-requests/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/adoption-requests/page.tsx [Client Component SSR]
+    ./app/admin/adoption-requests/page.tsx [Server Component]
+
+
+./app/admin/animals/page.tsx:3:1
+Export default doesn't exist in target module
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
+ [90m 2 |[39m
+[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mAdminTable[39m[33m,[39m { 
+[33mAdminTableRow[39m[33m,[39m [33mAdminTableCell[39m } [36mfrom[39m 
+[32m"@/components/AdminTable"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[
+39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m
+^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 4 |[39m [36mimport[39m [33mBadge[39m [36mfrom[39m 
+[32m"@/components/Badge"[39m[33m;[39m
+ [90m 5 |[39m [36mimport[39m [33mImage[39m [36mfrom[39m 
+[32m"next/image"[39m[33m;[39m
+ [90m 6 |[39m [36mimport[39m [33mPagination[39m [36mfrom[39m 
+[32m"@/components/Pagination"[39m[33m;[39m[0m
+
+The export default was not found in module [project]/components/AdminTable.tsx 
+[app-client] (ecmascript).
+Did you mean to import AdminTable?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's 
+known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/animals/page.tsx [Client Component Browser]
+    ./app/admin/animals/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/animals/page.tsx [Client Component SSR]
+    ./app/admin/animals/page.tsx [Server Component]
+
+
+./app/admin/animals/page.tsx:3:1
+Export default doesn't exist in target module
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
+ [90m 2 |[39m
+[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mAdminTable[39m[33m,[39m { 
+[33mAdminTableRow[39m[33m,[39m [33mAdminTableCell[39m } [36mfrom[39m 
+[32m"@/components/AdminTable"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[
+39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m
+^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 4 |[39m [36mimport[39m [33mBadge[39m [36mfrom[39m 
+[32m"@/components/Badge"[39m[33m;[39m
+ [90m 5 |[39m [36mimport[39m [33mImage[39m [36mfrom[39m 
+[32m"next/image"[39m[33m;[39m
+ [90m 6 |[39m [36mimport[39m [33mPagination[39m [36mfrom[39m 
+[32m"@/components/Pagination"[39m[33m;[39m[0m
+
+The export default was not found in module [project]/components/AdminTable.tsx [app-ssr] 
+(ecmascript).
+Did you mean to import AdminTable?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's 
+known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/animals/page.tsx [Client Component Browser]
+    ./app/admin/animals/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/animals/page.tsx [Client Component SSR]
+    ./app/admin/animals/page.tsx [Server Component]
+
+
+./app/admin/animals/page.tsx:4:1
+Export default doesn't exist in target module
+[0m [90m 2 |[39m
+ [90m 3 |[39m [36mimport[39m [33mAdminTable[39m[33m,[39m { 
+[33mAdminTableRow[39m[33m,[39m [33mAdminTableCell[39m } [36mfrom[39m 
+[32m"@/components/AdminTable"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m [33mBadge[39m [36mfrom[39m 
+[32m"@/components/Badge"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[
+39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 5 |[39m [36mimport[39m [33mImage[39m [36mfrom[39m 
+[32m"next/image"[39m[33m;[39m
+ [90m 6 |[39m [36mimport[39m [33mPagination[39m [36mfrom[39m 
+[32m"@/components/Pagination"[39m[33m;[39m
+ [90m 7 |[39m[0m
+
+The export default was not found in module [project]/components/Badge.tsx [app-client] 
+(ecmascript).
+Did you mean to import Badge?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's 
+known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/animals/page.tsx [Client Component Browser]
+    ./app/admin/animals/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/animals/page.tsx [Client Component SSR]
+    ./app/admin/animals/page.tsx [Server Component]
+
+
+./app/admin/animals/page.tsx:4:1
+Export default doesn't exist in target module
+[0m [90m 2 |[39m
+ [90m 3 |[39m [36mimport[39m [33mAdminTable[39m[33m,[39m { 
+[33mAdminTableRow[39m[33m,[39m [33mAdminTableCell[39m } [36mfrom[39m 
+[32m"@/components/AdminTable"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m [33mBadge[39m [36mfrom[39m 
+[32m"@/components/Badge"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[
+39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 5 |[39m [36mimport[39m [33mImage[39m [36mfrom[39m 
+[32m"next/image"[39m[33m;[39m
+ [90m 6 |[39m [36mimport[39m [33mPagination[39m [36mfrom[39m 
+[32m"@/components/Pagination"[39m[33m;[39m
+ [90m 7 |[39m[0m
+
+The export default was not found in module [project]/components/Badge.tsx [app-ssr] 
+(ecmascript).
+Did you mean to import Badge?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's 
+known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/animals/page.tsx [Client Component Browser]
+    ./app/admin/animals/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/animals/page.tsx [Client Component SSR]
+    ./app/admin/animals/page.tsx [Server Component]
+
+
+./app/admin/animals/page.tsx:6:1
+Export default doesn't exist in target module
+[0m [90m 4 |[39m [36mimport[39m [33mBadge[39m [36mfrom[39m 
+[32m"@/components/Badge"[39m[33m;[39m
+ [90m 5 |[39m [36mimport[39m [33mImage[39m [36mfrom[39m 
+[32m"next/image"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m [33mPagination[39m [36mfrom[39m 
+[32m"@/components/Pagination"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[
+39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 7 |[39m
+ [90m 8 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m 
+[33mManageAnimalsPage[39m() {
+ [90m 9 |[39m   [36mreturn[39m ([0m
+
+The export default was not found in module [project]/components/Pagination.tsx 
+[app-client] (ecmascript).
+Did you mean to import Pagination?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's 
+known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/animals/page.tsx [Client Component Browser]
+    ./app/admin/animals/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/animals/page.tsx [Client Component SSR]
+    ./app/admin/animals/page.tsx [Server Component]
+
+
+./app/admin/animals/page.tsx:6:1
+Export default doesn't exist in target module
+[0m [90m 4 |[39m [36mimport[39m [33mBadge[39m [36mfrom[39m 
+[32m"@/components/Badge"[39m[33m;[39m
+ [90m 5 |[39m [36mimport[39m [33mImage[39m [36mfrom[39m 
+[32m"next/image"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 6 |[39m [36mimport[39m [33mPagination[39m [36mfrom[39m 
+[32m"@/components/Pagination"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[
+39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 7 |[39m
+ [90m 8 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m 
+[33mManageAnimalsPage[39m() {
+ [90m 9 |[39m   [36mreturn[39m ([0m
+
+The export default was not found in module [project]/components/Pagination.tsx [app-ssr] 
+(ecmascript).
+Did you mean to import Pagination?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's 
+known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/animals/page.tsx [Client Component Browser]
+    ./app/admin/animals/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/animals/page.tsx [Client Component SSR]
+    ./app/admin/animals/page.tsx [Server Component]
+
+
+./app/admin/blog/page.tsx:3:1
+Export default doesn't exist in target module
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
+ [90m 2 |[39m
+[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mAdminTable[39m[33m,[39m { 
+[33mAdminTableRow[39m[33m,[39m [33mAdminTableCell[39m } [36mfrom[39m 
+[32m"@/components/AdminTable"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[
+39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m
+^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 4 |[39m [36mimport[39m [33mBadge[39m [36mfrom[39m 
+[32m"@/components/Badge"[39m[33m;[39m
+ [90m 5 |[39m [36mimport[39m [33mPagination[39m [36mfrom[39m 
+[32m"@/components/Pagination"[39m[33m;[39m
+ [90m 6 |[39m[0m
+
+The export default was not found in module [project]/components/AdminTable.tsx 
+[app-client] (ecmascript).
+Did you mean to import AdminTable?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's 
+known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/blog/page.tsx [Client Component Browser]
+    ./app/admin/blog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/blog/page.tsx [Client Component SSR]
+    ./app/admin/blog/page.tsx [Server Component]
+
+
+./app/admin/blog/page.tsx:3:1
+Export default doesn't exist in target module
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
+ [90m 2 |[39m
+[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mAdminTable[39m[33m,[39m { 
+[33mAdminTableRow[39m[33m,[39m [33mAdminTableCell[39m } [36mfrom[39m 
+[32m"@/components/AdminTable"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[
+39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m
+^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 4 |[39m [36mimport[39m [33mBadge[39m [36mfrom[39m 
+[32m"@/components/Badge"[39m[33m;[39m
+ [90m 5 |[39m [36mimport[39m [33mPagination[39m [36mfrom[39m 
+[32m"@/components/Pagination"[39m[33m;[39m
+ [90m 6 |[39m[0m
+
+The export default was not found in module [project]/components/AdminTable.tsx [app-ssr] 
+(ecmascript).
+Did you mean to import AdminTable?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's 
+known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/blog/page.tsx [Client Component Browser]
+    ./app/admin/blog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/blog/page.tsx [Client Component SSR]
+    ./app/admin/blog/page.tsx [Server Component]
+
+
+./app/admin/blog/page.tsx:4:1
+Export default doesn't exist in target module
+[0m [90m 2 |[39m
+ [90m 3 |[39m [36mimport[39m [33mAdminTable[39m[33m,[39m { 
+[33mAdminTableRow[39m[33m,[39m [33mAdminTableCell[39m } [36mfrom[39m 
+[32m"@/components/AdminTable"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m [33mBadge[39m [36mfrom[39m 
+[32m"@/components/Badge"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[
+39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 5 |[39m [36mimport[39m [33mPagination[39m [36mfrom[39m 
+[32m"@/components/Pagination"[39m[33m;[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m 
+[33mManageBlogPage[39m() {[0m
+
+The export default was not found in module [project]/components/Badge.tsx [app-client] 
+(ecmascript).
+Did you mean to import Badge?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's 
+known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/blog/page.tsx [Client Component Browser]
+    ./app/admin/blog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/blog/page.tsx [Client Component SSR]
+    ./app/admin/blog/page.tsx [Server Component]
+
+
+./app/admin/blog/page.tsx:4:1
+Export default doesn't exist in target module
+[0m [90m 2 |[39m
+ [90m 3 |[39m [36mimport[39m [33mAdminTable[39m[33m,[39m { 
+[33mAdminTableRow[39m[33m,[39m [33mAdminTableCell[39m } [36mfrom[39m 
+[32m"@/components/AdminTable"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m [33mBadge[39m [36mfrom[39m 
+[32m"@/components/Badge"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[
+39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 5 |[39m [36mimport[39m [33mPagination[39m [36mfrom[39m 
+[32m"@/components/Pagination"[39m[33m;[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m 
+[33mManageBlogPage[39m() {[0m
+
+The export default was not found in module [project]/components/Badge.tsx [app-ssr] 
+(ecmascript).
+Did you mean to import Badge?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's 
+known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/blog/page.tsx [Client Component Browser]
+    ./app/admin/blog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/blog/page.tsx [Client Component SSR]
+    ./app/admin/blog/page.tsx [Server Component]
+
+
+./app/admin/blog/page.tsx:5:1
+Export default doesn't exist in target module
+[0m [90m 3 |[39m [36mimport[39m [33mAdminTable[39m[33m,[39m { 
+[33mAdminTableRow[39m[33m,[39m [33mAdminTableCell[39m } [36mfrom[39m 
+[32m"@/components/AdminTable"[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m [33mBadge[39m [36mfrom[39m 
+[32m"@/components/Badge"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mPagination[39m [36mfrom[39m 
+[32m"@/components/Pagination"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[
+39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m 
+[33mManageBlogPage[39m() {
+ [90m 8 |[39m   [36mreturn[39m ([0m
+
+The export default was not found in module [project]/components/Pagination.tsx 
+[app-client] (ecmascript).
+Did you mean to import Pagination?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's 
+known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/blog/page.tsx [Client Component Browser]
+    ./app/admin/blog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/blog/page.tsx [Client Component SSR]
+    ./app/admin/blog/page.tsx [Server Component]
+
+
+./app/admin/blog/page.tsx:5:1
+Export default doesn't exist in target module
+[0m [90m 3 |[39m [36mimport[39m [33mAdminTable[39m[33m,[39m { 
+[33mAdminTableRow[39m[33m,[39m [33mAdminTableCell[39m } [36mfrom[39m 
+[32m"@/components/AdminTable"[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m [33mBadge[39m [36mfrom[39m 
+[32m"@/components/Badge"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mPagination[39m [36mfrom[39m 
+[32m"@/components/Pagination"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[
+39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m 
+[33mManageBlogPage[39m() {
+ [90m 8 |[39m   [36mreturn[39m ([0m
+
+The export default was not found in module [project]/components/Pagination.tsx [app-ssr] 
+(ecmascript).
+Did you mean to import Pagination?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's 
+known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/blog/page.tsx [Client Component Browser]
+    ./app/admin/blog/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/blog/page.tsx [Client Component SSR]
+    ./app/admin/blog/page.tsx [Server Component]
+
+
+./app/admin/dashboard/page.tsx:2:1
+Export default doesn't exist in target module
+[0m [90m 1 |[39m [36mimport[39m [33mStatsCard[39m [36mfrom[39m 
+[32m"@/components/StatsCard"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m [33mAdminTable[39m[33m,[39m { 
+[33mAdminTableRow[39m[33m,[39m [33mAdminTableCell[39m } [36mfrom[39m 
+[32m"@/components/AdminTable"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[
+39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m
+^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 3 |[39m [36mimport[39m [33mBadge[39m [36mfrom[39m 
+[32m"@/components/Badge"[39m[33m;[39m
+ [90m 4 |[39m
+ [90m 5 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m 
+[33mAdminDashboard[39m() {[0m
+
+The export default was not found in module [project]/components/AdminTable.tsx [app-rsc] 
+(ecmascript).
+Did you mean to import AdminTable?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's 
+known statically that the requested export doesn't exist.
+
+
+./app/admin/dashboard/page.tsx:3:1
+Export default doesn't exist in target module
+[0m [90m 1 |[39m [36mimport[39m [33mStatsCard[39m [36mfrom[39m 
+[32m"@/components/StatsCard"[39m[33m;[39m
+ [90m 2 |[39m [36mimport[39m [33mAdminTable[39m[33m,[39m { 
+[33mAdminTableRow[39m[33m,[39m [33mAdminTableCell[39m } [36mfrom[39m 
+[32m"@/components/AdminTable"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mBadge[39m [36mfrom[39m 
+[32m"@/components/Badge"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[
+39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 4 |[39m
+ [90m 5 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m 
+[33mAdminDashboard[39m() {
+ [90m 6 |[39m   [36mreturn[39m ([0m
+
+The export default was not found in module [project]/components/Badge.tsx [app-rsc] 
+(ecmascript).
+Did you mean to import Badge?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's 
+known statically that the requested export doesn't exist.
+
+
+./app/admin/donations/page.tsx:3:1
+Export default doesn't exist in target module
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
+ [90m 2 |[39m
+[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mAdminTable[39m[33m,[39m { 
+[33mAdminTableRow[39m[33m,[39m [33mAdminTableCell[39m } [36mfrom[39m 
+[32m"@/components/AdminTable"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[
+39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m
+^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 4 |[39m [36mimport[39m [33mBadge[39m [36mfrom[39m 
+[32m"@/components/Badge"[39m[33m;[39m
+ [90m 5 |[39m [36mimport[39m [33mPagination[39m [36mfrom[39m 
+[32m"@/components/Pagination"[39m[33m;[39m
+ [90m 6 |[39m[0m
+
+The export default was not found in module [project]/components/AdminTable.tsx 
+[app-client] (ecmascript).
+Did you mean to import AdminTable?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's 
+known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/donations/page.tsx [Client Component Browser]
+    ./app/admin/donations/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/donations/page.tsx [Client Component SSR]
+    ./app/admin/donations/page.tsx [Server Component]
+
+
+./app/admin/donations/page.tsx:3:1
+Export default doesn't exist in target module
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
+ [90m 2 |[39m
+[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mAdminTable[39m[33m,[39m { 
+[33mAdminTableRow[39m[33m,[39m [33mAdminTableCell[39m } [36mfrom[39m 
+[32m"@/components/AdminTable"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[
+39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m
+^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 4 |[39m [36mimport[39m [33mBadge[39m [36mfrom[39m 
+[32m"@/components/Badge"[39m[33m;[39m
+ [90m 5 |[39m [36mimport[39m [33mPagination[39m [36mfrom[39m 
+[32m"@/components/Pagination"[39m[33m;[39m
+ [90m 6 |[39m[0m
+
+The export default was not found in module [project]/components/AdminTable.tsx [app-ssr] 
+(ecmascript).
+Did you mean to import AdminTable?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's 
+known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/donations/page.tsx [Client Component Browser]
+    ./app/admin/donations/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/donations/page.tsx [Client Component SSR]
+    ./app/admin/donations/page.tsx [Server Component]
+
+
+./app/admin/donations/page.tsx:4:1
+Export default doesn't exist in target module
+[0m [90m 2 |[39m
+ [90m 3 |[39m [36mimport[39m [33mAdminTable[39m[33m,[39m { 
+[33mAdminTableRow[39m[33m,[39m [33mAdminTableCell[39m } [36mfrom[39m 
+[32m"@/components/AdminTable"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m [33mBadge[39m [36mfrom[39m 
+[32m"@/components/Badge"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[
+39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 5 |[39m [36mimport[39m [33mPagination[39m [36mfrom[39m 
+[32m"@/components/Pagination"[39m[33m;[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m 
+[33mDonationsPage[39m() {[0m
+
+The export default was not found in module [project]/components/Badge.tsx [app-client] 
+(ecmascript).
+Did you mean to import Badge?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's 
+known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/donations/page.tsx [Client Component Browser]
+    ./app/admin/donations/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/donations/page.tsx [Client Component SSR]
+    ./app/admin/donations/page.tsx [Server Component]
+
+
+./app/admin/donations/page.tsx:4:1
+Export default doesn't exist in target module
+[0m [90m 2 |[39m
+ [90m 3 |[39m [36mimport[39m [33mAdminTable[39m[33m,[39m { 
+[33mAdminTableRow[39m[33m,[39m [33mAdminTableCell[39m } [36mfrom[39m 
+[32m"@/components/AdminTable"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m [33mBadge[39m [36mfrom[39m 
+[32m"@/components/Badge"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[
+39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 5 |[39m [36mimport[39m [33mPagination[39m [36mfrom[39m 
+[32m"@/components/Pagination"[39m[33m;[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m 
+[33mDonationsPage[39m() {[0m
+
+The export default was not found in module [project]/components/Badge.tsx [app-ssr] 
+(ecmascript).
+Did you mean to import Badge?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's 
+known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/donations/page.tsx [Client Component Browser]
+    ./app/admin/donations/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/donations/page.tsx [Client Component SSR]
+    ./app/admin/donations/page.tsx [Server Component]
+
+
+./app/admin/donations/page.tsx:5:1
+Export default doesn't exist in target module
+[0m [90m 3 |[39m [36mimport[39m [33mAdminTable[39m[33m,[39m { 
+[33mAdminTableRow[39m[33m,[39m [33mAdminTableCell[39m } [36mfrom[39m 
+[32m"@/components/AdminTable"[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m [33mBadge[39m [36mfrom[39m 
+[32m"@/components/Badge"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mPagination[39m [36mfrom[39m 
+[32m"@/components/Pagination"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[
+39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m 
+[33mDonationsPage[39m() {
+ [90m 8 |[39m   [36mreturn[39m ([0m
+
+The export default was not found in module [project]/components/Pagination.tsx 
+[app-client] (ecmascript).
+Did you mean to import Pagination?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's 
+known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/donations/page.tsx [Client Component Browser]
+    ./app/admin/donations/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/donations/page.tsx [Client Component SSR]
+    ./app/admin/donations/page.tsx [Server Component]
+
+
+./app/admin/donations/page.tsx:5:1
+Export default doesn't exist in target module
+[0m [90m 3 |[39m [36mimport[39m [33mAdminTable[39m[33m,[39m { 
+[33mAdminTableRow[39m[33m,[39m [33mAdminTableCell[39m } [36mfrom[39m 
+[32m"@/components/AdminTable"[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m [33mBadge[39m [36mfrom[39m 
+[32m"@/components/Badge"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mPagination[39m [36mfrom[39m 
+[32m"@/components/Pagination"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[
+39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m 
+[33mDonationsPage[39m() {
+ [90m 8 |[39m   [36mreturn[39m ([0m
+
+The export default was not found in module [project]/components/Pagination.tsx [app-ssr] 
+(ecmascript).
+Did you mean to import Pagination?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's 
+known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/donations/page.tsx [Client Component Browser]
+    ./app/admin/donations/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/donations/page.tsx [Client Component SSR]
+    ./app/admin/donations/page.tsx [Server Component]
+
+
+./app/admin/rescues/page.tsx:3:1
+Export default doesn't exist in target module
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
+ [90m 2 |[39m
+[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mAdminTable[39m[33m,[39m { 
+[33mAdminTableRow[39m[33m,[39m [33mAdminTableCell[39m } [36mfrom[39m 
+[32m"@/components/AdminTable"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[
+39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m
+^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 4 |[39m [36mimport[39m [33mImage[39m [36mfrom[39m 
+[32m"next/image"[39m[33m;[39m
+ [90m 5 |[39m
+ [90m 6 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m 
+[33mManageRescuesPage[39m() {[0m
+
+The export default was not found in module [project]/components/AdminTable.tsx 
+[app-client] (ecmascript).
+Did you mean to import AdminTable?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's 
+known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/rescues/page.tsx [Client Component Browser]
+    ./app/admin/rescues/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/rescues/page.tsx [Client Component SSR]
+    ./app/admin/rescues/page.tsx [Server Component]
+
+
+./app/admin/rescues/page.tsx:3:1
+Export default doesn't exist in target module
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
+ [90m 2 |[39m
+[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mAdminTable[39m[33m,[39m { 
+[33mAdminTableRow[39m[33m,[39m [33mAdminTableCell[39m } [36mfrom[39m 
+[32m"@/components/AdminTable"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[
+39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m
+^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 4 |[39m [36mimport[39m [33mImage[39m [36mfrom[39m 
+[32m"next/image"[39m[33m;[39m
+ [90m 5 |[39m
+ [90m 6 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m 
+[33mManageRescuesPage[39m() {[0m
+
+The export default was not found in module [project]/components/AdminTable.tsx [app-ssr] 
+(ecmascript).
+Did you mean to import AdminTable?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's 
+known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/rescues/page.tsx [Client Component Browser]
+    ./app/admin/rescues/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/rescues/page.tsx [Client Component SSR]
+    ./app/admin/rescues/page.tsx [Server Component]
+
+
+./app/admin/success-stories/page.tsx:3:1
+Export default doesn't exist in target module
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
+ [90m 2 |[39m
+[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mAdminTable[39m[33m,[39m { 
+[33mAdminTableRow[39m[33m,[39m [33mAdminTableCell[39m } [36mfrom[39m 
+[32m"@/components/AdminTable"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[
+39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m
+^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 4 |[39m [36mimport[39m [33mBadge[39m [36mfrom[39m 
+[32m"@/components/Badge"[39m[33m;[39m
+ [90m 5 |[39m [36mimport[39m [33mImage[39m [36mfrom[39m 
+[32m"next/image"[39m[33m;[39m
+ [90m 6 |[39m[0m
+
+The export default was not found in module [project]/components/AdminTable.tsx 
+[app-client] (ecmascript).
+Did you mean to import AdminTable?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's 
+known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/success-stories/page.tsx [Client Component Browser]
+    ./app/admin/success-stories/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/success-stories/page.tsx [Client Component SSR]
+    ./app/admin/success-stories/page.tsx [Server Component]
+
+
+./app/admin/success-stories/page.tsx:3:1
+Export default doesn't exist in target module
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
+ [90m 2 |[39m
+[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mAdminTable[39m[33m,[39m { 
+[33mAdminTableRow[39m[33m,[39m [33mAdminTableCell[39m } [36mfrom[39m 
+[32m"@/components/AdminTable"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[
+39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22
+m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m
+^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[
+31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 4 |[39m [36mimport[39m [33mBadge[39m [36mfrom[39m 
+[32m"@/components/Badge"[39m[33m;[39m
+ [90m 5 |[39m [36mimport[39m [33mImage[39m [36mfrom[39m 
+[32m"next/image"[39m[33m;[39m
+ [90m 6 |[39m[0m
+
+The export default was not found in module [project]/components/AdminTable.tsx [app-ssr] 
+(ecmascript).
+Did you mean to import AdminTable?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's 
+known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/success-stories/page.tsx [Client Component Browser]
+    ./app/admin/success-stories/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/success-stories/page.tsx [Client Component SSR]
+    ./app/admin/success-stories/page.tsx [Server Component]
+
+
+./app/admin/success-stories/page.tsx:4:1
+Export default doesn't exist in target module
+[0m [90m 2 |[39m
+ [90m 3 |[39m [36mimport[39m [33mAdminTable[39m[33m,[39m { 
+[33mAdminTableRow[39m[33m,[39m [33mAdminTableCell[39m } [36mfrom[39m 
+[32m"@/components/AdminTable"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m [33mBadge[39m [36mfrom[39m 
+[32m"@/components/Badge"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[
+39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 5 |[39m [36mimport[39m [33mImage[39m [36mfrom[39m 
+[32m"next/image"[39m[33m;[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m 
+[33mManageSuccessStoriesPage[39m() {[0m
+
+The export default was not found in module [project]/components/Badge.tsx [app-client] 
+(ecmascript).
+Did you mean to import Badge?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's 
+known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/success-stories/page.tsx [Client Component Browser]
+    ./app/admin/success-stories/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/success-stories/page.tsx [Client Component SSR]
+    ./app/admin/success-stories/page.tsx [Server Component]
+
+
+./app/admin/success-stories/page.tsx:4:1
+Export default doesn't exist in target module
+[0m [90m 2 |[39m
+ [90m 3 |[39m [36mimport[39m [33mAdminTable[39m[33m,[39m { 
+[33mAdminTableRow[39m[33m,[39m [33mAdminTableCell[39m } [36mfrom[39m 
+[32m"@/components/AdminTable"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m [33mBadge[39m [36mfrom[39m 
+[32m"@/components/Badge"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m
+[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m
+[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[
+39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39
+m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^
+[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[
+22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 5 |[39m [36mimport[39m [33mImage[39m [36mfrom[39m 
+[32m"next/image"[39m[33m;[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m 
+[33mManageSuccessStoriesPage[39m() {[0m
+
+The export default was not found in module [project]/components/Badge.tsx [app-ssr] 
+(ecmascript).
+Did you mean to import Badge?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's 
+known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/admin/success-stories/page.tsx [Client Component Browser]
+    ./app/admin/success-stories/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/admin/success-stories/page.tsx [Client Component SSR]
+    ./app/admin/success-stories/page.tsx [Server Component]
+
+
+    at <unknown> (./app/admin/adoption-requests/page.tsx:3:1)
+    at <unknown> (./app/admin/adoption-requests/page.tsx:3:1)
+    at <unknown> (./app/admin/adoption-requests/page.tsx:4:1)
+    at <unknown> (./app/admin/adoption-requests/page.tsx:4:1)
+    at <unknown> (./app/admin/adoption-requests/page.tsx:5:1)
+    at <unknown> (./app/admin/adoption-requests/page.tsx:5:1)
+    at <unknown> (./app/admin/animals/page.tsx:3:1)
+    at <unknown> (./app/admin/animals/page.tsx:3:1)
+    at <unknown> (./app/admin/animals/page.tsx:4:1)
+    at <unknown> (./app/admin/animals/page.tsx:4:1)
+    at <unknown> (./app/admin/animals/page.tsx:6:1)
+    at <unknown> (./app/admin/animals/page.tsx:6:1)
+    at <unknown> (./app/admin/blog/page.tsx:3:1)
+    at <unknown> (./app/admin/blog/page.tsx:3:1)
+    at <unknown> (./app/admin/blog/page.tsx:4:1)
+    at <unknown> (./app/admin/blog/page.tsx:4:1)
+    at <unknown> (./app/admin/blog/page.tsx:5:1)
+    at <unknown> (./app/admin/blog/page.tsx:5:1)
+    at <unknown> (./app/admin/dashboard/page.tsx:2:1)
+    at <unknown> (./app/admin/dashboard/page.tsx:3:1)
+    at <unknown> (./app/admin/donations/page.tsx:3:1)
+    at <unknown> (./app/admin/donations/page.tsx:3:1)
+    at <unknown> (./app/admin/donations/page.tsx:4:1)
+    at <unknown> (./app/admin/donations/page.tsx:4:1)
+    at <unknown> (./app/admin/donations/page.tsx:5:1)
+    at <unknown> (./app/admin/donations/page.tsx:5:1)
+    at <unknown> (./app/admin/rescues/page.tsx:3:1)
+    at <unknown> (./app/admin/rescues/page.tsx:3:1)
+    at <unknown> (./app/admin/success-stories/page.tsx:3:1)
+    at <unknown> (./app/admin/success-stories/page.tsx:3:1)
+    at <unknown> (./app/admin/success-stories/page.tsx:4:1)
+    at <unknown> (./app/admin/success-stories/page.tsx:4:1)
