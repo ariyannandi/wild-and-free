@@ -43,9 +43,7 @@ export default function AdoptPage() {
               <option>Large</option>
               <option>Extra Large</option>
             </select>
-            <button className="flex items-center gap-2 px-4 py-2 bg-primary text-black border border-primary rounded-xl text-sm font-bold hover:brightness-105 transition-all">
-              <span className="material-symbols-outlined text-sm">Filters</span>
-            </button>
+
           </div>
         </div>
       </div>

@@ -19,7 +19,7 @@ export default function Footer() {
                   fill
                 />
               </div>
-              <span className="text-xl font-black tracking-tighter uppercase italic text-primary">Wild &amp; Free</span>
+              <span className="text-xl font-black tracking-tighter text-primary">Wild &amp; Free</span>
             </div>
             <p className="text-gray-500 text-sm leading-relaxed">
               Registered NGO #123-456. Dedicated to the protection and well-being of all animals since 2019.

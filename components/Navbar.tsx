@@ -16,7 +16,7 @@ export default function Navbar() {
                 fill
               />
             </div>
-            <span className="text-xl font-black tracking-tighter uppercase italic">Wild &amp; Free</span>
+            <span className="text-xl font-black tracking-tighter">Wild &amp; Free</span>
           </Link>
           <div className="hidden md:flex items-center gap-8">
             <Link className="text-sm font-semibold hover:text-primary transition-colors" href="/">Home</Link>

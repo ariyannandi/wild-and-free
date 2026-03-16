@@ -1,10 +1,10 @@
-import { Public_Sans, Outfit, Inter } from 'next/font/google'
+import { Montserrat, Outfit, Inter } from 'next/font/google'
 import './globals.css'
 import ConditionalLayout from '@/components/ConditionalLayout'
 
-const publicSans = Public_Sans({
+const montserrat = Montserrat({
   subsets: ['latin'],
-  variable: '--font-public-sans',
+  variable: '--font-montserrat',
   display: 'swap',
 })
 
@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body 
-        className={`${publicSans.variable} ${outfit.variable} ${inter.variable} antialiased min-h-screen flex flex-col font-sans`}
+        className={`${montserrat.variable} ${outfit.variable} ${inter.variable} antialiased min-h-screen flex flex-col font-sans`}
         suppressHydrationWarning
       >
         <ConditionalLayout>

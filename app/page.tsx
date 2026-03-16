@@ -54,9 +54,14 @@ export default function Home() {
       {/* Available for Adoption */}
       <section className="bg-primary/5 py-16 w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-black uppercase tracking-tight">Find Your Best Friend</h2>
-            <p className="text-slate-600 dark:text-slate-400 mt-2">These lovely souls are waiting for their forever homes.</p>
+          <div className="flex justify-between items-end mb-10">
+            <div>
+              <h2 className="text-3xl font-black uppercase tracking-tight">Find Your Best Friend</h2>
+              <div className="h-1.5 w-20 bg-primary mt-2"></div>
+            </div>
+            <Link href="/adopt" className="text-sm font-bold flex items-center gap-1 hover:text-primary transition-colors">
+              View All Friends <ArrowRight className="w-4 h-4 ml-1" />
+            </Link>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
