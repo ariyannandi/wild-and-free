@@ -1,0 +1,96 @@
+/* Load Material Symbols font via CSS — avoids manual <head> tag and hydration issues */
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block");
+
+@import "tailwindcss";
+
+:root {
+    /* Brand */
+    --primary: #fff560;
+    --primary-dark: #d4c800;
+    --secondary: #000000;
+
+    /* Background */
+    --background: #ffffff;
+    --background-muted: #f8f8f8;
+    --background-dark: #0f1117;
+
+    /* Text */
+    --foreground: #111111;
+    --muted: #6b7280;
+
+    /* UI */
+    --border: #e5e7eb;
+    --card: #ffffff;
+}
+
+@theme inline {
+    /* Colors */
+    --color-primary: var(--primary);
+    --color-primary-dark: var(--primary-dark);
+    --color-secondary: var(--secondary);
+    --color-background: var(--background);
+    --color-background-muted: var(--background-muted);
+    --color-background-dark: var(--background-dark);
+    --color-foreground: var(--foreground);
+    --color-muted: var(--muted);
+    --color-border: var(--border);
+    --color-card: var(--card);
+
+    /* Typography */
+    --font-display: var(--font-outfit), system-ui, sans-serif;
+    --font-sans: var(--font-inter), system-ui, sans-serif;
+}
+
+/* ── Base ──────────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: 'Public Sans', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Material Symbols ─────────────────────────────────────────── */
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ── Utility: fill icon ───────────────────────────────────────── */
+.fill-1 {
+    font-variation-settings: 'FILL' 1;
+}
+
+/* ── Focus ring ───────────────────────────────────────────────── */
+:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+/* ── Admin dark layout surface ────────────────────────────────── */
+.admin-surface {
+    background-color: var(--background-dark);
+    color: #f1f5f9;
+}
