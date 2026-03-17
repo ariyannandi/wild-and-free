@@ -13,7 +13,7 @@ export default function HeroSection() {
             <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
           </div>
           <div className="relative z-10 max-w-2xl px-8 md:px-16 text-white">
-            <h1 className="text-5xl md:text-7xl font-black leading-tight mb-6 tracking-tight">
+            <h1 className="text-6xl md:text-6xl font-black leading-tight mb-6 tracking-tight">
               Every Animal Deserves a <span className="text-primary italic">Second Chance</span>
             </h1>
             <p className="text-lg md:text-xl text-slate-200 mb-10 leading-relaxed font-light">
